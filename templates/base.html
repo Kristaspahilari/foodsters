@@ -9,10 +9,16 @@
       
       
       .section {
-        max-width: 500px;
+        max-width: 1000px;
         margin: auto;
-        background: white;
-        padding: 10px;
+        background: rgb(183, 255, 183);
+        padding: 50px;
+      }
+      .container {
+        text-align: center;
+        text-decoration: greenyellow;
+        text-transform: capitalize;
+
       }
       </style>
   </head>
@@ -48,34 +54,127 @@
         </div>
       </nav>
 
+  <section class="section">
+    <div class="container">
+      <h1 class=" title" >
+        Welcome to Foodsters!
+      </h1>
+      <p> Select all the ingredients that you have at home:  </p>
+      </dix>
 
+
+      <div class="tabs is-medium is-centered is-primary">
+        <ul>
+          <li class="is-active"><a>    </a></li>
+        </ul>
+      </div>
+ 
+      
+<!--
+      <div class="dropdown is-hoverable ">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <span><div class="tabs is-small is-centered is-primary">
+              <ul>
+                <li class="is-active"><a>Grains</a></li>
+              </ul>
+            </div>
+            <div> </span>
+            <span class="icon is-large">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu1" role="menu">
+          <div class="dropdown-content">
+            <div class="dropdown-item">
+              {% for grain in grains_list %}
+              <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ grain }}</button>
+              {% endfor %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+  -->
+  
+    <div class="tabs is-medium is-centered is-primary">
+      <ul>
+        <li class="is-active"><a>Grains</a></li>
+      </ul>
+    </div>
+    <div>
+   {% for grain in grains_list %}
+   <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ grain }}</button>
+   {% endfor %}
+   </div>
+
+    <div class="tabs is-medium is-centered is-primary">
+      <ul>
+        <li class="is-active"><a>Vegetables</a></li>
+      </ul>
+    </div>
+    <div>
+   {% for vegetable in vegetables_list %}
+   <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ vegetable }}</button>
+   {% endfor %}
+   </div>
+   
+
+
+
+
+   <div class="tabs is-medium is-centered is-primary">
+    <ul>
+      <li class="is-active"><a>Fruits</a></li>
+    </ul>
+  </div>
+  <div>
+    {% for fruit in fruits_list %}
+ <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ fruit }}</button>
+ {% endfor %}
+ </div>
 
   
 
+ <div class="tabs is-medium is-centered is-primary">
+  <ul>
+    <li class="is-active"><a>Dairy</a></li>
+  </ul>
+</div>
+<div>
+  {% for dairy in dairy_list %}
+<button class="button is-small is-success is-rounded is-centered is-inverted "> {{ dairy }}</button>
+{% endfor %}
+</div>
 
 
 
+<div class="tabs is-medium is-centered is-primary">
+  <ul>
+    <li class="is-active"><a>Meat, poultry, seafood</a></li>
+  </ul>
+</div>
+<div>
+  {% for meat in meat_list %}
+<button class="button is-small is-success is-rounded is-centered is-inverted "> {{ meat }}</button>
+{% endfor %}
+</div>
+    
+<div class="tabs is-medium is-centered is-primary">
+  <ul>
+    <li class="is-active"><a>    </a></li>
+  </ul>
+</div>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title" >
-        Welcome to Foodsters!
-      </h1>
-
-    <div class="food">
-      <h1 class="title">Grains</h1>
-      <label class="checkbox">
-        <input type="checkbox">
-        food
-      </label>
-    </div>
 
 
-
-
+    <button class="button is is-centered is-normal is-fullwidth">Search</button>
 
   </section>
 
   
+
+
   </body>
 </html>

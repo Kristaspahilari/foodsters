@@ -1,0 +1,22 @@
+            Beef
+            Lamb 
+            Veal
+            Pork 
+            Kangaroo
+            Sausages
+            Chicken
+            Turkey
+            Duck
+            Emu
+            Goose
+            Bush birds
+            Fish
+            Prawns
+            Crab
+            Lobster
+            Mussels
+            Oysters
+            Scallops
+    Clams
+    Chicken eggs
+    Duck eggs
