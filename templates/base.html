@@ -14,19 +14,13 @@
         background: rgb(183, 255, 183);
         padding: 50px;
       }
-      .container {
-        text-align: center;
-        text-decoration: greenyellow;
-        text-transform: capitalize;
-
-      }
       </style>
   </head>
   <body>
       
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
+          <a class="navbar-item" href= "home.html"> 
            Foodsters
           </a>
       
@@ -42,10 +36,11 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-success" href="home.html">
+                
                   <strong>Home</strong>
                 </a>
-                <a class="button is-light">
+                <a class="button is-light" href="recipes.html">
                   All recipes
                 </a>
               </div>
@@ -54,127 +49,14 @@
         </div>
       </nav>
 
-  <section class="section">
-    <div class="container">
-      <h1 class=" title" >
-        Welcome to Foodsters!
-      </h1>
-      <p> Select all the ingredients that you have at home:  </p>
-      </dix>
 
-
-      <div class="tabs is-medium is-centered is-primary">
-        <ul>
-          <li class="is-active"><a>    </a></li>
-        </ul>
-      </div>
- 
       
-<!--
-      <div class="dropdown is-hoverable ">
-        <div class="dropdown-trigger">
-          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-            <span><div class="tabs is-small is-centered is-primary">
-              <ul>
-                <li class="is-active"><a>Grains</a></li>
-              </ul>
-            </div>
-            <div> </span>
-            <span class="icon is-large">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </button>
+
+            {% block content %}
+
+            {% endblock %}
+
         </div>
-        <div class="dropdown-menu" id="dropdown-menu1" role="menu">
-          <div class="dropdown-content">
-            <div class="dropdown-item">
-              {% for grain in grains_list %}
-              <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ grain }}</button>
-              {% endfor %}
-
-            </div>
-          </div>
-        </div>
-      </div>
-  -->
-  
-    <div class="tabs is-medium is-centered is-primary">
-      <ul>
-        <li class="is-active"><a>Grains</a></li>
-      </ul>
-    </div>
-    <div>
-   {% for grain in grains_list %}
-   <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ grain }}</button>
-   {% endfor %}
-   </div>
-
-    <div class="tabs is-medium is-centered is-primary">
-      <ul>
-        <li class="is-active"><a>Vegetables</a></li>
-      </ul>
-    </div>
-    <div>
-   {% for vegetable in vegetables_list %}
-   <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ vegetable }}</button>
-   {% endfor %}
-   </div>
-   
-
-
-
-
-   <div class="tabs is-medium is-centered is-primary">
-    <ul>
-      <li class="is-active"><a>Fruits</a></li>
-    </ul>
-  </div>
-  <div>
-    {% for fruit in fruits_list %}
- <button class="button is-small is-success is-rounded is-centered is-inverted ">{{ fruit }}</button>
- {% endfor %}
- </div>
-
-  
-
- <div class="tabs is-medium is-centered is-primary">
-  <ul>
-    <li class="is-active"><a>Dairy</a></li>
-  </ul>
-</div>
-<div>
-  {% for dairy in dairy_list %}
-<button class="button is-small is-success is-rounded is-centered is-inverted "> {{ dairy }}</button>
-{% endfor %}
-</div>
-
-
-
-<div class="tabs is-medium is-centered is-primary">
-  <ul>
-    <li class="is-active"><a>Meat, poultry, seafood</a></li>
-  </ul>
-</div>
-<div>
-  {% for meat in meat_list %}
-<button class="button is-small is-success is-rounded is-centered is-inverted "> {{ meat }}</button>
-{% endfor %}
-</div>
-    
-<div class="tabs is-medium is-centered is-primary">
-  <ul>
-    <li class="is-active"><a>    </a></li>
-  </ul>
-</div>
-
-
-
-    <button class="button is is-centered is-normal is-fullwidth">Search</button>
-
-  </section>
-
-  
-
-
+    </section>
   </body>
 </html>

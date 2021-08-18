@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+ <style>
+   .all-recipes {
+     width: auto;
+     margin: 50px 50px 50px 50px;
+    background-color: rgb(233, 223, 223);
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
+   .card-content{
+    
+    border:1px solid black;
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(202, 192, 192);
+   }
+   .recipe {
+ height: 400px;
+ width: 400px;
+}
+
+.content {
+  margin-bottom: 10px;
+}
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+  .media {
+    width: auto;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+
+.content {
+  height: 400px;
+  width: 400px;
+}
+ </style>
+
+
+
+    
+<div class="all-recipes">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-128x128">
+          <img src="{{url_for('static', filename='spinaq.jpg')}}" alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">Rice Salad</p>
+        <p class="subtitle is-6">YIELD: Serves 4</p>
+        <p class="subtitle is-6">TOTAL TIME: About 30 minutes</p>
+      </div>
+    </div>
+        <div class="content">
+          Chopped salad with perfectly cooked cold long grain rice mixed with homemade olive oil, lemon, herb and garlic dressing.<br>
+          <br> 
+          <button class="button is-small is-fullwidth is-rounded is-primary">TRY!</button>
+        </div>
+  </div> 
+  
+ 
+  
+
+</div>
+
+
+
+{% endblock %}
